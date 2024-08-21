@@ -16,15 +16,22 @@ public partial class FooView
     {
         InitializeComponent();
 
+        // register all IRecipient<T> implemented messages
+        Messenger.RegisterAll(this);
+
+        Disposed += OnDisposed;
         Load += OnLoad;
         DataContextChanged += OnDataContextChanged;
     }
 
+    private void OnDisposed(object? sender, EventArgs e)
+    {
+        // unregister all IRecipient<T> implemented messages
+        Messenger.UnregisterAll(this);
+    }
+
     private void OnLoad(object? sender, EventArgs e)
     {
-        // register all IRecipient<T> implemented messages
-        Messenger.RegisterAll(this);
-
         #region Command bindings
 
         btnAlert.DataBindings.Add(
