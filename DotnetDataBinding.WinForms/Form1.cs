@@ -1,6 +1,6 @@
 using DotnetDataBinding.ViewModels;
 
-namespace DotnetDataBinding;
+namespace DotnetDataBinding.WinForms;
 
 public partial class Form1 : Form
 {

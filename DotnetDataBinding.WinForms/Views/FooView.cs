@@ -1,7 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.Messaging;
 using DotnetDataBinding.ViewModels;
 
-namespace DotnetDataBinding.Views;
+namespace DotnetDataBinding.WinForms.Views;
 
 public partial class FooView
     : UserControl,

@@ -1,4 +1,4 @@
-﻿namespace DotnetDataBinding.Views
+﻿namespace DotnetDataBinding.WinForms.Views
 {
     partial class FooView
     {

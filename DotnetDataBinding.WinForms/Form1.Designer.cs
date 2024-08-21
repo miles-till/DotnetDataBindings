@@ -1,4 +1,4 @@
-﻿namespace DotnetDataBinding
+﻿namespace DotnetDataBinding.WinForms
 {
     partial class Form1
     {
