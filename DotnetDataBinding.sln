@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotnetDataBinding.DXWinForm
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotnetDataBinding.WinForms", "DotnetDataBinding.WinForms\DotnetDataBinding.WinForms.csproj", "{3D9D1D01-1C91-4CB0-AD12-D64007B557C2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotnetDataBinding.WPF", "DotnetDataBinding.WPF\DotnetDataBinding.WPF.csproj", "{988EA6F2-DBCB-44D1-AA0C-18B1B53B4E4B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{3D9D1D01-1C91-4CB0-AD12-D64007B557C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D9D1D01-1C91-4CB0-AD12-D64007B557C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D9D1D01-1C91-4CB0-AD12-D64007B557C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{988EA6F2-DBCB-44D1-AA0C-18B1B53B4E4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{988EA6F2-DBCB-44D1-AA0C-18B1B53B4E4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{988EA6F2-DBCB-44D1-AA0C-18B1B53B4E4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{988EA6F2-DBCB-44D1-AA0C-18B1B53B4E4B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
