@@ -12,7 +12,7 @@ public partial class FooViewModel : ObservableRecipient
         public readonly string Message = message;
     }
 
-    public sealed class ConfirmAlertRequest(string name) : RequestMessage<bool>
+    public sealed class ConfirmAlertRequest(string name) : AsyncRequestMessage<bool>
     {
         public readonly string Name = name;
     }
@@ -24,9 +24,9 @@ public partial class FooViewModel : ObservableRecipient
     public bool CanAlert() => Name != string.Empty;
 
     [RelayCommand(CanExecute = nameof(CanAlert))]
-    public void Alert()
+    public async Task AlertAsync()
     {
-        bool confirmed = Messenger.Send(new ConfirmAlertRequest(Name));
+        bool confirmed = await Messenger.Send(new ConfirmAlertRequest(Name));
         if (confirmed)
         {
             Messenger.Send(new AlertMessage("Confirmed!"));
