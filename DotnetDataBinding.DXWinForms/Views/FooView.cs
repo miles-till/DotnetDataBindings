@@ -37,16 +37,12 @@ public partial class FooView
     {
         #region Command bindings
 
-        // binding like this causes NonSupportedException in DevExpress.Utils.v24.1.dll
-        // but works for base WinForms controls (see DotnetDataBinding.WinForms.FooView)
-        // workaround - command binding is done in OnDataContextChanged
-
-        //btnAlert.DataBindings.Add(
-        //    nameof(SimpleButton.Command),
-        //    _bindingSource,
-        //    nameof(FooViewModel.AlertCommand),
-        //    true
-        //);
+        btnAlert.DataBindings.Add(
+            nameof(SimpleButton.Command),
+            _bindingSource,
+            nameof(FooViewModel.AlertCommand),
+            true
+        );
 
         #endregion
 
@@ -66,9 +62,6 @@ public partial class FooView
     private void OnDataContextChanged(object? sender, EventArgs e)
     {
         _bindingSource.DataSource = DataContext;
-
-        // bind commands (workaround due to NonSupportedException in DevExpress.Utils)
-        btnAlert.Command = ViewModel?.AlertCommand;
     }
 
     #region Message receivers

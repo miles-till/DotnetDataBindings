@@ -21,9 +21,6 @@ rest of the generated UI designer code.
 > [!NOTE]
 > Requires a DevExpress subscription with access to the DevExpress Nuget feed.
 
-> [!WARNING]
-> There is currently an issue with binding Commands to DevExpress buttons. See the comments in the `OnLoad` method in [DotnetDataBinding.DXWinForms/Views/FooView.cs](./DotnetDataBinding.DXWinForms/Views/FooView.cs). A workaround is shown in the same file.
-
 ### DotnetDataBindings.WPF
 
 ### Avalonia UI
