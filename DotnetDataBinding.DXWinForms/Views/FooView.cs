@@ -31,6 +31,12 @@ public partial class FooView
     {
         // unregister all IRecipient<T> implemented messages
         Messenger.UnregisterAll(this);
+
+        // deactivate viewmodel
+        if (ViewModel is not null)
+        {
+            ViewModel.IsActive = false;
+        }
     }
 
     private void OnLoad(object? sender, EventArgs e)
